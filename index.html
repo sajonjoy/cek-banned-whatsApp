@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEK BANNED WHATSAPP</title></title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .header {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .description {
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+        .country {
+            display: flex;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .country-flag {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .phone-input {
+            display: flex;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .country-code {
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        input {
+            border: none;
+            outline: none;
+            font-size: 16px;
+            width: 100%;
+        }
+        .continue-btn {
+            background-color: #25D366;
+            color: white;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-top: 30px;
+            cursor: pointer;
+        }
+        .loading {
+            display: none;
+            text-align: center;
+            margin-top: 30px;
+        }
+        .result {
+            display: none;
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+            text-align: center;
+            font-family: monospace;
+        }
+        .logo {
+            border: 1px solid #fff;
+            padding: 5px;
+            display: inline-block;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Masukkan nomor telepon Anda</div>
+    <div class="description">
+        WhatsApp perlu memverifikasi nomor telepon Anda.<br>
+        Biaya operator mungkin berlaku. <strong>Berapa nomor telepon saya?</strong>
+    </div>
+    
+    <hr>
+    
+    <div class="country">
+        <div class="country-flag">Indonesia</div>
+    </div>
+    
+    <div class="phone-input">
+        <div class="country-code">+62</div>
+        <input type="tel" id="phoneNumber" placeholder="Nomor telepon">
+    </div>
+    
+    <button class="continue-btn" id="continueBtn">Lanjut</button>
+    
+    <div class="loading" id="loading">
+        <p>Memverifikasi nomor telepon...</p>
+    </div>
+    
+    <div class="result" id="result">
+        <div class="logo">SELESAI DI BAND OLEH KING WILXZ STORE</div>
+        <p>-Sampah Masyarakat<br>
+        -Beban WhatsApp<br>
+        -EztBand</p>
+        <p>© Oleh : @WilxStore</p>
+    </div>
+
+    <script>
+        document.getElementById('continueBtn').addEventListener('click', function() {
+            const phoneNumber = document.getElementById('phoneNumber').value;
+            if (phoneNumber) {
+                // Tampilkan loading
+                document.getElementById('loading').style.display = 'block';
+                document.getElementById('continueBtn').style.display = 'none';
+                
+                // Sembunyikan loading dan tampilkan hasil setelah 1-2 menit
+                setTimeout(function() {
+                    document.getElementById('loading').style.display = 'none';
+                    document.getElementById('result').style.display = 'block';
+                    document.getElementById('result').innerHTML = `
+                        <div class="logo">${phoneNumber}</div>
+                        <div class="logo">SELESAI DIBLOKIR OLEH KING WILXZ STORE</div>
+                        <p>-Sampah Masyarakat<br>
+                        -Beban WhatsApp<br>
+                        -EztBand</p>
+                        <p>© Oleh : @WilxStore</p>
+                    `;
+                }, 2000); // Diubah menjadi 2 detik untuk demo, ubah ke 60000 untuk 1 menit
+            }
+        });
+    </script>
+</body>
+  </html>
